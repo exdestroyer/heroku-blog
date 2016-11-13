@@ -1,7 +1,7 @@
 // config.js
 export default {
   site: {
-    title: 'React Universal Blog'
+    title: 'EXDestroyer - A Limbo for Helvin Leo'
   },
   bucket: {
     slug: process.env.COSMIC_BUCKET || 'react-exdestroyer-blog',
