@@ -1,0 +1,12 @@
+.intro-header .site-heading, .intro-header .page-heading {
+  font-family: 'Micriosoft YaHei';
+}
+
+.intro-header .site-heading h1, .intro-header .page-heading h1 {
+  font-family: 'Helvetica';
+}
+
+div {
+  color: red;
+  font-weight: 1;
+}

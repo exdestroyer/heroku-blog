@@ -11,9 +11,9 @@ import AppStore from '../stores/AppStore'
 import Nav from './Partials/Nav'
 import Footer from './Partials/Footer'
 import Loading from './Partials/Loading'
-
+import '../styles/scss/exdestroyer.scss'
 export default class App extends Component {
-  
+
   // Add change listeners to stores
   componentDidMount(){
     AppStore.addChangeListener(this._onChange.bind(this))
@@ -21,6 +21,7 @@ export default class App extends Component {
 
   // Remove change listeners from stores
   componentWillUnmount(){
+
     AppStore.removeChangeListener(this._onChange.bind(this))
   }
 
@@ -31,6 +32,7 @@ export default class App extends Component {
   }
 
   _onChange(){
+
     this.setState(AppStore)
   }
 
@@ -40,12 +42,11 @@ export default class App extends Component {
 
     // Show loading for browser
     if(!data.ready){
-
       document.body.className = ''
       this.getStore()
 
       let style = {
-        marginTop: 120
+        marginTop: 120 
       }
       return (
         <div className="container text-center" style={ style }>
