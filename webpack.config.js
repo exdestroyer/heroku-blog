@@ -5,7 +5,7 @@ var sassExtractor = new ExtractTextPlugin('../css/exdestroyer.css');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 if (process.env.NODE_ENV === 'development') {
-  var loaders = ['react-hot', 'babel']
+  var loaders = ['react-hot-loader/webpack', 'babel']
 } else {
   var loaders = ['babel']
 }
